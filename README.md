@@ -86,3 +86,11 @@ Nice rolls! Your new passphrase has been copied to your clipboard.
 # Example in clipboard:
 # overfed unhappy onstage barman reggae shifting unpaved contest spoilage modulator reversing number
 ```
+
+## FAQ
+
+### How are passwords generated?
+
+Password Dice was created based on this blog post [EFF Dice-Generated Passphrases](https://www.eff.org/dice).
+
+For each word in the passphrase, the app will roll 5 D6 and use the corresponding word from the [EFF Large Word List](https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt). Additionally, for each word, the app will roll 1 D100 and append the result to the word.
