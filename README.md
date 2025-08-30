@@ -22,7 +22,7 @@ pipx install .
 ```
  Usage: password_dice [OPTIONS]                                                                      
 ╭─ Options ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ --words               -w                     INTEGER RANGE [1<=x<=20]  Number of words [default: 6]                                                       │
+│ --words               -w                     INTEGER RANGE [1<=x<=24]  Number of words [default: 6]                                                       │
 │ --separator           -s                     TEXT                      Character to separate words. One of: hyphen, underscore, space [default: hyphen]   │
 │ --numbers                 --no-numbers                                 Include numbers [default: numbers]                                                 │
 │ --capitalize              --no-capitalize                              Capitalize words [default: capitalize]                                             │

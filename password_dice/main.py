@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 @app.command()
 def main(
-    words_option: Annotated[int, typer.Option("--words", "-w", min=1, max=20, help="Number of words")] = 6,
+    words_option: Annotated[int, typer.Option("--words", "-w", min=1, max=24, help="Number of words")] = 6,
     separator_option: Annotated[
         str,
         typer.Option(
