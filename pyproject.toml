@@ -20,7 +20,7 @@ requires = ["hatchling"]
 packages = ["password_dice"]
 
 [tool.hatch.build.targets.wheel.force-include]
-"password_dice/word_list.txt" = "password_dice/word_list.txt"
+"password_dice/data/word_list.txt" = "password_dice/data/word_list.txt"
 
 [tool.ruff]
 line-length = 120
