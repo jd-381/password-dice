@@ -1,0 +1,26 @@
+[project]
+name = "password-dice"
+version = "0.1.0"
+description = "Roll dice to create a secure and memorable password"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pyperclip>=1.9.0",
+    "typer>=0.16.1",
+]
+
+[project.scripts]
+password_dice = "password_dice.main:app"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["password_dice"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"password_dice/word_list.txt" = "password_dice/word_list.txt"
+
+[tool.ruff]
+line-length = 120
