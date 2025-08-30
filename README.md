@@ -22,7 +22,7 @@ pipx install .
 ```
  Usage: password_dice [OPTIONS]                                                                      
 ╭─ Options ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ --words               -w                     INTEGER RANGE [1<=x<=20]  Number of words [default: 6]                                                       │
+│ --words               -w                     INTEGER RANGE [1<=x<=24]  Number of words [default: 6]                                                       │
 │ --separator           -s                     TEXT                      Character to separate words. One of: hyphen, underscore, space [default: hyphen]   │
 │ --numbers                 --no-numbers                                 Include numbers [default: numbers]                                                 │
 │ --capitalize              --no-capitalize                              Capitalize words [default: capitalize]                                             │
@@ -33,11 +33,12 @@ pipx install .
 
 Running `password_dice` with no options will create a passphrase like this:
 ```sh
-$ password_dice       
+$ password_dice
 Nice rolls! Your new passphrase has been copied to your clipboard.
 # Example in clipboard:
 # Malformed35-Haggler58-Shining59-Shrapnel29-Outdoors14-Scrubber54
 ```
+
 Passing `--dice` will print your rolls (but not your passphrase):
 ```sh
 $ password_dice --dice
@@ -76,4 +77,12 @@ You rolled: 100 (CRITICAL SUCCESS)
 Nice rolls! Your new passphrase has been copied to your clipboard.
 # Example in clipboard:
 # Zoom92-Anybody1-Jitters90-Paver29-Payable3-Traction100
+```
+
+Create a 12 (or 24) word seed phrase:
+```sh
+$ password_dice --words 12 --separator space --no-capitalize --no-numbers
+Nice rolls! Your new passphrase has been copied to your clipboard.
+# Example in clipboard:
+# overfed unhappy onstage barman reggae shifting unpaved contest spoilage modulator reversing number
 ```
